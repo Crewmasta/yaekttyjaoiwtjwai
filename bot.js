@@ -7,7 +7,7 @@ empire.on("ready", async () => {
 });
 
 empire.on("message", empire => {
-if(empire.content === ".botinfo";
+if(empire.content === ".botinfo"
 const empire = new Discord.RichEmbed()
  .setTitle("~~__***Bot info***__~~.")
  .setAuthor("Idk", "https://i.imgur.com/lm8s41J.png")

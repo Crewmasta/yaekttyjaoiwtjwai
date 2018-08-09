@@ -6,6 +6,7 @@ bot.on("ready", async () => {
   bot.user.setGame("Empire.");
 });
 var prefix = ".";
+client.on("mesage", cmd => {
 if(cmd ==== `${prefix}botinfo`){
 
  let empire = new Discord.RichEmbed()
@@ -16,6 +17,6 @@ if(cmd ==== `${prefix}botinfo`){
   return message.channe.send(empire);
  
 }
-
+}
 
 client.login(process.env.BOT_TOKEN); 

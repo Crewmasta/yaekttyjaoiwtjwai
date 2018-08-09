@@ -1,13 +1,13 @@
 const discord = require("discord.js");
-const bot = new Discord.Client({disableEveryone: true});
+const empire = new Discord.Client({disableEveryone: true});
 
-bot.on("ready", async () => {
- console.log (`${bot.user.username} is online`);
-  bot.user.setGame("Empire.");
+empire.on("ready", async () => {
+ console.log (`${empire.user.username} is online`);
+  empire.user.setGame("Empire.");
 });
 var prefix = ".";
 client.on("mesage", cmd => {
-if(cmd ==== `${prefix}botinfo`){
+if("cmd.content === "${prefix}botinfo");
 
  let empire = new Discord.RichEmbed()
  .setDescription("Bot information.")

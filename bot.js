@@ -8,7 +8,7 @@ empire.on("ready", async () => {
 
 empire.on("message", empire => {
  if (message.content === 'pls avatar') {
-const empire = new Discord.RichEmbed()
+var empire = new Discord.RichEmbed()
  .setTitle("~~__***Bot info***__~~.")
  .setAuthor("Idk", "https://i.imgur.com/lm8s41J.png")
  

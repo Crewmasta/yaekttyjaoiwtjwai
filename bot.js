@@ -14,7 +14,7 @@ const empire = new Discord.RichEmbed()
  
  .setColor(RANDOM)
  .setDescription("Just anormal bot info tho")
- .addField("Bot name", "${empire.user.username}, true)
+ .addField("Bot name", "empire.user.username",true)
    
    }
    message.channel.send({empire});

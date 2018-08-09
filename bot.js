@@ -7,7 +7,7 @@ empire.on("ready", async () => {
 });
 
 empire.on("message", empire => {
-if(empire.content === ".botinfo"
+ if (message.content === 'pls avatar') {
 const empire = new Discord.RichEmbed()
  .setTitle("~~__***Bot info***__~~.")
  .setAuthor("Idk", "https://i.imgur.com/lm8s41J.png")
@@ -15,8 +15,9 @@ const empire = new Discord.RichEmbed()
  .setColor(RANDOM)
  .setDescription("Just anormal bot info tho")
  .addField("Bot name", "empire.user.username",true)
-   
+}
    }
+});
    message.channel.send({empire});
 
 

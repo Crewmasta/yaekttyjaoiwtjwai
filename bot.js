@@ -28,3 +28,6 @@ empire.on('message', message => {
     message.channel.send(embed);
   }
 });
+
+
+empire.login(process.env.BOT_TOKEN); 

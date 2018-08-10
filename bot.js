@@ -1,20 +1,30 @@
-const discord = require("discord.js");
-const empire = new Discord.Client({disableEveryone: true});
+const { Client, RichEmbed } = require('discord.js');
 
-empire.on("ready", async () => {
- console.log (`${empire.user.username} is online`);
-  empire.user.setGame("Empire.");
+// Create an instance of a Discord client
+const empire = new Client();
 
-empire.on("message", empire => {
- if (message.content === '.info') {
-const tata = new RichEmbed()
-
-.setTitle('~~__***Bot info.!***__~~')
-.setColor('RANDOM')
-.setDescription('Bot info.!')
-.addField('Bot name', 'empire.user.username'); 
-
-empire.send.channel(tata);
- }
+/**
+ * The ready event is vital, it means that only _after_ this will your bot start reacting to information
+ * received from Discord
+ */
+empire.on('ready', () => {
+  console.log('I am ready!');
 });
-client.login(process.env.BOT_TOKEN); 
+
+empire.on('message', message => {
+  // If the message is "how to embed"
+  if (message.content === 'how to embed') {
+    // We can create embeds using the MessageEmbed constructor
+    // Read more about all that you can do with the constructor
+    // over at https://discord.js.org/#/docs/main/stable/class/RichEmbed
+  const tata = new RichEmbed()
+      // Set the title of the field
+      .setTitle('A slick little embed')
+      // Set the color of the embed
+      .setColor(0xFF0000)
+      // Set the main content of the embed
+      .setDescription('Hello, this is a slick embed!');
+    // Send the embed to the same channel as the message
+    message.channel.send(embed);
+  }
+});

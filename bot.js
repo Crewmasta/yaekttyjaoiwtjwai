@@ -13,7 +13,8 @@ const tata = new RichEmbed()
 .setColor('RANDOM')
 .setDescription('Bot info.!')
 .addField('Bot name', 'empire.user.username'); 
- });
 
-
+empire.send.channel(tata);
+ }
+});
 client.login(process.env.BOT_TOKEN); 

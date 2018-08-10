@@ -7,18 +7,13 @@ empire.on("ready", async () => {
 });
 
 empire.on("message", empire => {
- if (message.content === 'pls avatar') {
-var empire = new Discord.RichEmbed()
- .setTitle("~~__***Bot info***__~~.")
- .setAuthor("Idk", "https://i.imgur.com/lm8s41J.png")
- 
- .setColor(RANDOM)
- .setDescription("Just anormal bot info tho")
- .addField("Bot name", "empire.user.username",true)
-}
-   }
-});
-   message.channel.send({empire});
+ if (message.content === '.info') {
+const tata = new RichEmbed()
+
+.setTitle('~~__***Bot info.!***__~~')
+.setColor('RANDOM')
+.setDescription('Bot info.!')
+.addField('Bot name', 'empire.user.username'); 
 
 
 client.login(process.env.BOT_TOKEN); 
